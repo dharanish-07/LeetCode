@@ -1,0 +1,30 @@
+class Solution {
+    public void nextPermutation(int[] nums) {
+        int i=nums.length-2;
+        int j=nums.length-1;
+        while(i>=0&&nums[i]>=nums[i+1])
+        {
+            i--;
+        }
+        if(i==-1){
+            Arrays.sort(nums);
+            return;}
+        while(nums[i]>=nums[j])
+        {
+            j--;
+        }
+        int t=nums[i];
+        nums[i]=nums[j];
+        nums[j]=t;
+        int x=i+1;
+        int y=nums.length-1;
+        while(x<y)
+        {
+           int tp=nums[x];
+            nums[x]=nums[y];
+            nums[y]=tp;
+            x++;
+            y--;
+      }
+    }
+}
