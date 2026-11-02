@@ -1,3 +1,4 @@
+
 class Solution {
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
         int[] ans = new int[2];
