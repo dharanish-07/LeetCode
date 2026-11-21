@@ -1,3 +1,4 @@
+// base 7
 class Solution {
     public int sumBase(int n, int k) {
         int sum = 0;
