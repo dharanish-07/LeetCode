@@ -1,3 +1,4 @@
+// two pointer 
 class Solution {
     public int findContentChildren(int[] g, int[] s) {
         int c=0;
